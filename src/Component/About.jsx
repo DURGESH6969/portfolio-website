@@ -10,7 +10,7 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-        Hey folks ! I'm Durgesh, a passionate UI/UX designer and developer who  love  crafting beautiful UIs and try to bring ideas to life using my comprehensive knowledge and understanding of web technologies.
+        Greetings, I'm Durgesh, an aspiring full-stack developer driven by a passion for crafting exceptional digital experiences. With a keen eye for detail and a deep understanding of web technologies, I specialize in seamlessly blending captivating user interfaces with robust backend solutions.
         </p>
         <br />
         <p className="text-xl pb-20">

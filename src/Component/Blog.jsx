@@ -2,6 +2,7 @@ import React from 'react';
 import multithreading from "../assets/multithreading.jpg";
 import monolithic from "../assets/monolithic.jpg";
 import reactImg from "../assets/reactImg.jpg";
+import promise from "../assets/promise.jpg";
 
 const Blog = () => {
   const blogPosts = [
@@ -22,20 +23,26 @@ const Blog = () => {
       title: 'Unlocking the Secrets of React: Lazy Loading for Lightning-Fast Apps! ⚡️✨',
       src: reactImg,
       href: "https://durgeshgupta.hashnode.dev/how-to-optimize-your-react-application-using-lazy-loading"
+    },
+    {
+      id: 4,
+      title: "Unlocking JavaScript Promises: A Rookie's Roadmap to Async Success",
+      src: promise,
+      href: "https://medium.com/@dg13974/unlocking-javascript-promises-a-rookies-roadmap-to-async-success-923de17dfe25"
     }
     // Add more blog posts as needed
   ];
 
   return (
     <div  name="blog" className='w-full h-full bg-gradient-to-t from-[#818cf8] to-[#9c95f9] to-[#b39ffb] to-[#c6a9fc] to-[#d8b4fe] text-white'>
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full relative z-10'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-indigo-500'>Blog</p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0  '>
           {blogPosts.map(({ id, title, href, src }) => (
-            <div key={id} className='rounded-md overflow-hidden shadow-md hover:scale-105 duration-500'>
+            <div key={id} className='rounded-md overflow-hidden shadow-md hover:scale-105 duration-500 relative z-0'>
               <img src={src} alt={title} className='w-full h-64 object-cover ' />
               <div className='p-4'>
                 <h3 className='text-xl font-semibold text-indigo-900 mb-2'>{title}</h3>

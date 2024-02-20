@@ -14,34 +14,39 @@ const Projects = () => {
       id: 1,
       src : food,
       details: "This is MERN stack Project, it's in inital stage so as of now it's not hosted yet but you can see the progress in the code part.",
-      demo:false,
+      demo: false,
+      codeUrl: "https://github.com/DURGESH6969/food-mania",
 
     },
     {
       id: 2,
       src : selenium,
       details: "This is my first attempt to explore automation here I have write a python script that automates the process of login and adding product to cart and then checkout and logout. I have used Selenium Web driver. Also it's not hosted anywhere so no demo here.",
-      demo:false,
+      demo: false,
+      codeUrl:"https://github.com/DURGESH6969/Selenium_Poject",
     },
     {
       id: 3,
       src : AI,
       details: "This is a simple mockup site which have UI of a real website also I have put some articles about Artificial Intelligence particularly Chat-gpt.Also it's not yet hosted anywhere so no demo. here",
       demo : true,
-      url : "https://chatgpt3blog.netlify.app/",
+      url: "https://chatgpt3blog.netlify.app/",
+      codeUrl: "https://github.com/DURGESH6969/ModernUIGpt3blog",
     },
     {
       id: 4,
       src : bookstore,
       details : "This is also a work in progress web app where user can add different books of their choice and alos update the list based upon their requirement.",
-      demo:false,
+      demo: false,
+      codeUrl:"https://github.com/DURGESH6969/Book-Read-List",
     },
     {
       id: 5,
       src : main,
       details : "This is a simple weather app that let's user to input their city name and then the live weather condition to the user.",
       demo:true,
-      url : "https://mausam-vibhag-v1.netlify.app",
+      url: "https://mausam-vibhag-v1.netlify.app",
+      codeUrl:"https://github.com/DURGESH6969/Mausam-Vibhag",
     },
   ];
   
@@ -60,11 +65,11 @@ const Projects = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            projectsArr.map(({id,src,details,demo,url})=>(
+            projectsArr.map(({id,src,details,demo,url,codeUrl})=>(
               <div key={id} className='shadow-md shadow-[#debfff] rounded-lg flex flex-col'>
               <img src={src} alt="bookstore-img" className=' h-full w-full object-cover  rounded-md duration-200 hover:scale-105 overflow-hidden cursor-pointer'/>
-              <div className='flex items-center justify-center mt-auto'>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:underline'>Code</button>
+              <div className='flex items-center text-center justify-center mt-auto'>
+              <a href={codeUrl} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:underline'>Code</a>
                 {demo && <a href={url} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:underline'>Demo</a>}
               </div>
              <div className='flex flex-col items-center justify-center m-auto '>

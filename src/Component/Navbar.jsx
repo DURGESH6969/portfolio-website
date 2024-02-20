@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full h-14 bg-indigo-400 flex justify-between px-4 items-center text-white sticky top-0 backdrop-blur-md bg-opacity-50 ">
+    <nav className="w-full h-14 bg-indigo-400 flex justify-between px-4 items-center text-white sticky top-0 backdrop-blur-md bg-opacity-50 z-50 ">
       <div>
       <h1 name="home" className="text-2xl text-indigo-900 font-bold cursor-pointer">
         Durgesh
